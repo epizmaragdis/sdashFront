@@ -32,6 +32,7 @@ export class CounterComponent implements OnChanges, AfterViewInit {
   private changefollowers;
   private timeTitle1;
   private timeTitle2;
+  private history;
 
   constructor() {
     // this.dataset = new Array<any>();
@@ -87,7 +88,7 @@ export class CounterComponent implements OnChanges, AfterViewInit {
     this.title3 = 'Periodo de actualización';
     this.timeTitle1= '12 horas'
     this.timeTitle2= '72 horas'
-
+    this.history= this.config.all_tweets;
 
   }
 

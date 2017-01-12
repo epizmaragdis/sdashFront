@@ -75,20 +75,7 @@ export class DataComponent implements OnInit {
           followers_count: tweets.docs.reduce(function(followers_count, data) {
             followers_count = followers_count +data.followers_count;
             return followers_count;
-          }, 0),
-          // canales: tweets.docs.reduce(function(canales, data) {
-          //     if(data.intents[0].intent === "Canales"){
-          //       canales= canales + 1;
-          //     }
-          //     return canales;
-          //   }, 0),
-          //   contactCenter: tweets.docs.reduce(function(contactCenter, data) {
-          //       if(data.intents[0].intent === "ContactCenter"){
-          //         contactCenter++;
-          //       }
-          //       return contactCenter;
-          //     }, 0)
-          }
+          }, 0), }
         }
 
 
@@ -115,6 +102,8 @@ getHistory() {
         };
 
         this.TrendChartConfig = trendChartArea;
+
+
 
       });
   }
